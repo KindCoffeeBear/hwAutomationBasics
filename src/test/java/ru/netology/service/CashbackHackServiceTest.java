@@ -6,7 +6,7 @@ import static org.testng.Assert.*;
 
 public class CashbackHackServiceTest {
     @Test
-    void shouldCalculateCashbackHack() {
+    public void shouldCalculateCashbackHack() {
         CashbackHackService service = new CashbackHackService();
         int amount = 1900;
 
@@ -17,7 +17,7 @@ public class CashbackHackServiceTest {
     }
 
     @Test
-    void shouldNotCalculateCashbackHackIfAmountMultipleOf1000() {
+    public void shouldNotCalculateCashbackHackIfAmountMultipleOf1000() {
         CashbackHackService service = new CashbackHackService();
         int amount = 2000;
 
